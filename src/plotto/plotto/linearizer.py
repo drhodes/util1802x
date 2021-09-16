@@ -26,7 +26,7 @@ class Linearizer:
         Set output arguments. Output arguments must be set before using SolveInv function
         '''
         self.args_out = args
-        self.Delta_output = self.Delta_output = sympy.Matrix([sympy.symbols('Delta_' + str(arg)) for arg in self.args_out])
+        self.Delta_output = sympy.Matrix([sympy.symbols('Delta_' + str(arg)) for arg in self.args_out])
         return
     def Jacobian(self, args):
         '''
