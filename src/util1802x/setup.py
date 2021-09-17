@@ -1,5 +1,5 @@
 '''
-plotto: plotto description
+util1802x: util1802x description
 
 Note that "python setup.py test" invokes pytest on the package. With appropriately
 configured setup.cfg, this will check both xxx_test modules and docstrings.
@@ -26,9 +26,9 @@ class PyTest(TestCommand):
 
 version = "0.1"
 
-setup(name="plotto",
+setup(name="util1802x",
       version=version,
-      description="plotto description",
+      description="util1802x description",
       long_description=open("README.rst").read(),
       classifiers=[ # Get strings from http://pypi.python.org/pypi?%3Aaction=list_classifiers
         'Development Status :: 1 - Planning',
@@ -50,6 +50,6 @@ setup(name="plotto",
       # TODO: List executable scripts, provided by the package (this is just an example)
       entry_points={
         'console_scripts': 
-            ['plotto=plotto:main']
+            ['util1802x=util1802x:main']
       }
 )

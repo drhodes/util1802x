@@ -1,5 +1,5 @@
 '''
-plotto: Main module
+util1802x: Main module
 
 Copyright 2021, Derek A. Rhodes
 Licensed under MIT.
@@ -8,7 +8,7 @@ Licensed under MIT.
 def main():
     '''
      Main function of the boilerplate code is the entry point of the
-    'plotto' executable script (defined in setup.py).
+    'util1802x' executable script (defined in setup.py).
     
     Use doctests, those are very helpful.
     

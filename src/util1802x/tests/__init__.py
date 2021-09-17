@@ -1,13 +1,10 @@
 '''
-plotto: Test module.
+util1802x: tests module.
 
 Meant for use with py.test.
-Write each test as a function named test_<something>.
+Organize tests into files, each named xxx_test.py
 Read more here: http://pytest.org/
 
 Copyright 2021, Derek A. Rhodes
 Licensed under MIT
 '''
-
-def test_example():
-    assert True
