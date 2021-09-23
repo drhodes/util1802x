@@ -1,6 +1,16 @@
 util1802x
 ==========================
 
+A collection of math utilities for 18.02x written by the learners of
+18.02x.
+
+
+
+
+
+----
+
+
 This is boilerplate code for your project, generated using the `python_boilerplate` paster template. It provides simple starting points for using some of the popular best-practices:
 
   * Proper [setuptools](https://pypi.python.org/pypi/setuptools)-compatible package layout.
@@ -123,5 +133,5 @@ Common development tasks
 Copyright & License
 -------------------
 
-  * Copyright 2021, Derek A. Rhodes
-  * License: MIT
+  * Copyright 2021, contributers util1802x
+  * License: ???
