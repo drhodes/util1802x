@@ -8,11 +8,12 @@ Read more here: http://pytest.org/
 Copyright 2021, participants of 18.02x
 Licensed under MIT
 '''
+import sympy
+import math
+import pytest
+from pyquchk import qc
 
 from util1802x.linearizer import Linearizer, SystemSolver
-import sympy
-import pytest
-import math
 
 # for testing equality between IEEE floats
 def isclose(a, b): assert(math.isclose(a, b))
@@ -28,7 +29,13 @@ def power(a, b): return a ** b
 @pytest.mark.parametrize("op1", [add, mul])   # pick a random operator
 @pytest.mark.parametrize("op2", [mul, power]) # pick another one
 @pytest.mark.randomize(min_num=0, max_num=20, ncalls=2) 
-def test_jacobian(n: int, m: int, x0: float, y0: float, op1, op2):
+def test_jacobian(n: int,    
+                  m: int,
+                  x0: float,
+                  y0: float,
+                  op1,
+                  op2,
+                  ):
     '''
     generate 5186 random functions and check to see if SystemSolver is
     generating the jacobian correctly.
@@ -54,3 +61,9 @@ def test_jacobian(n: int, m: int, x0: float, y0: float, op1, op2):
     isclose(J[0,1], f.diff(y).subs(p0map))
     isclose(J[1,0], g.diff(x).subs(p0map))
     isclose(J[1,1], g.diff(y).subs(p0map))
+    
+@qc
+def test_add(a=int, b=int):
+    c=a
+    if a < -100000: c = 42
+    assert add(a, b) == c + b
