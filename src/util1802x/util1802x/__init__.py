@@ -1,7 +1,7 @@
 '''
 util1802x: Main module
 
-Copyright 2021, Derek A. Rhodes
+Copyright 2021, see CONTRIBUTERS file
 Licensed under MIT.
 '''
 

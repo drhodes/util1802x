@@ -4,7 +4,7 @@ util1802x: util1802x description
 Note that "python setup.py test" invokes pytest on the package. With appropriately
 configured setup.cfg, this will check both xxx_test modules and docstrings.
 
-Copyright 2021, Derek A. Rhodes.
+Copyright 2021, see Contributers file
 Licensed under MIT.
 '''
 import sys
@@ -35,7 +35,7 @@ setup(name="util1802x",
         'Programming Language :: Python'
       ],
       keywords="math", # Separate with spaces
-      author="Derek A. Rhodes",
+      author="See CONTRIBUTERS file",
       author_email="physci@gmail.com",
       url="",
       license="MIT",
