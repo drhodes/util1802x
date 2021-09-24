@@ -6,5 +6,5 @@ Organize tests into files, each named xxx_test.py
 Read more here: http://pytest.org/
 
 Copyright 2021, see CONTRIBUTERS file
-Licensed under MIT
+Licensed under GNU GPLv3
 '''

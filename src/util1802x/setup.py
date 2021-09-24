@@ -5,7 +5,7 @@ Note that "python setup.py test" invokes pytest on the package. With appropriate
 configured setup.cfg, this will check both xxx_test modules and docstrings.
 
 Copyright 2021, see Contributers file
-Licensed under MIT.
+Licensed under GNU GPLv3
 '''
 import sys
 from setuptools import setup, find_packages
@@ -36,9 +36,9 @@ setup(name="util1802x",
       ],
       keywords="math", # Separate with spaces
       author="See CONTRIBUTERS file",
-      author_email="physci@gmail.com",
+      author_email="none",
       url="",
-      license="MIT",
+      license="GPLv3",
       packages=find_packages(exclude=['examples', 'tests']),
       include_package_data=True,
       zip_safe=False,

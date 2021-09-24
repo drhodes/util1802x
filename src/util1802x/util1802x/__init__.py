@@ -2,7 +2,7 @@
 util1802x: Main module
 
 Copyright 2021, see CONTRIBUTERS file
-Licensed under MIT.
+Licensed under GNU GPLv3
 '''
 
 def main():

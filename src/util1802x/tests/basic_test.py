@@ -6,7 +6,7 @@ Write each test as a function named test_<something>.
 Read more here: http://pytest.org/
 
 Copyright 2021, see CONTRIBUTERS file
-Licensed under MIT
+Licensed under GNU GPLv3
 '''
 
 def test_example():
