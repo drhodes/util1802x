@@ -19,4 +19,5 @@ class ParametricFunc():
         # the magnitude of this parametric function
         return sp.sqrt(self.functions.dot(self.functions))
 
-    
+    def unit_tangent_vector(self):
+        return self.diff().functions / self.diff().norm()

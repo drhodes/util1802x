@@ -28,3 +28,13 @@ def test_pfunc_equality_different_freevars():
     pfuncx = ParametricFunc(x, vx)
 
     assert pfunct == pfuncx
+
+
+def test_pfunc_unit_tangent_vector():
+    t = sp.symbols('t')
+    x = t
+    y = -5*t**2
+    func = ParametricFunc(t, Vec([x, y]))
+    v = Vec([1/(sp.sqrt(1 + 100*t**2)), (-10*t)/(sp.sqrt(1 + 100*t**2))])
+    testfunc = ParametricFunc(t, v)
+    assert func.unit_tangent_vector() == v
