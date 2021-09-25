@@ -1,13 +1,3 @@
-'''
-otools: Test module.
-
-Meant for use with py.test.
-Write each test as a function named test_<something>.
-Read more here: http://pytest.org/
-
-Copyright 2021, see CONTRIBUTERS file
-Licensed under GNU GPLv3
-'''
 import sympy
 import math
 import pytest
@@ -62,8 +52,3 @@ def test_jacobian(n: int,
     isclose(J[1,0], g.diff(x).subs(p0map))
     isclose(J[1,1], g.diff(y).subs(p0map))
     
-@qc
-def test_add(a=int, b=int):
-    c=a
-    if a < -100000: c = 42
-    assert add(a, b) == c + b

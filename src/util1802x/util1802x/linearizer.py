@@ -1,5 +1,4 @@
 # Copyright 2021, @stalcod15
-# Licensed under ???
 
 import sympy
 
