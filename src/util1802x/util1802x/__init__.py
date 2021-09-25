@@ -17,6 +17,6 @@ from .parametric_function import ParametricFunc
 #     4
 
 #     '''
-    
+   
 #     print("Hello")
 

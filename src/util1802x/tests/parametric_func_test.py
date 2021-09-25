@@ -14,11 +14,8 @@ def test_pfunc_norm():
     v = Vec([t**2, t**2])    
     vdiff = sp.diff(v, t)
     pfunc = ParametricFunc(t, v)
-
-    assert vdiff == Vec([2*t, 2*t])
-    assert vdiff.dot(vdiff) == vdiff.dot(vdiff)
     assert pfunc.diff().norm() == sp.sqrt(vdiff.dot(vdiff))
-    
+  
 
 def test_pfunc_equality_different_freevars():
     # two functions with different free vars should be equal
