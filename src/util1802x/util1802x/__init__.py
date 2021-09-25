@@ -2,6 +2,7 @@
 from .linearizer import Linearizer
 from .vector import Vec
 from .func import Func
+from .parametric_function import ParametricFunc
 
 # def main():
 #     '''
