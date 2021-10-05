@@ -2,7 +2,6 @@
 import sympy as sp
 from util1802x import Vec
 
-
 class ParametricFunc():
     def __init__(self, freevar: sp.Symbol, functions: Vec):
         self.freevar = freevar
