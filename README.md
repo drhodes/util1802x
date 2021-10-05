@@ -1,8 +1,31 @@
 util1802x
 ==========================
 
-A collection of math utilities for 18.02x written by the learners of
-18.02x.
+An amorphous collection of math utilities for 18.02x written by the
+learners of 18.02x.
+
+
+xblock development for jupyterlite
+==========================
+
+see xblock_development in the root directory of this repo.
+
+
+
+ray tracing
+==========================
+
+
+
+
+
+
+
+left over project initialization docs
+==========================
+
+
+
 
 
 
